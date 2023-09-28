@@ -71,26 +71,26 @@
       </p>
     </main>
     <footer>
-
+        <script>
+            function muda_cor(){
+                document.getElementById("principal").style.backgroundColor="red";
+            }
+        </script>
         <nav>
-         <ul>
-          <li><button id="tema1button"> Tema 1 </button></li>
-          <li><button id="tema2button"> Tema 2 </button></li>
-         </ul>
-            <script>
-                const changeColorButton = document.getElementById('tema2button');
-                changeColorButton.addEventListener('click',() => {
-                    document.body.style.backgroundColor='red';
-                    document.body.header.backgroundColor='red';
-                });
-            </script>
-                        <script>
-                const changeColorButton = document.getElementById('tema1button');
-                changeColorButton.addEventListener('click',() => {
-                    document.body.style.backgroundColor='black';
-                    document.body.header.backgroundColor='black';
-                });
-            </script>
+                <ul>
+          <li> <button id="tema1button"> Tema 1 </button></li>
+          <li>  <button id="tema2button">Tema 2</button> </li>
+        </ul>
+
+         <script>
+             const changeColorButton2 = document.getElementById('tema2button');
+             // Adiciona evento de listener ao botao
+             changeColorButton2.addEventListener('click', () => {
+                 // Muda a cor de fundo
+                 document.body.style.backgroundColor = 'red';
+                 document.header.style.backgroundColor = 'red';
+             });
+         </script>
         </nav>
       Copyright © 2023 pedroka
     </footer>
