@@ -46,6 +46,30 @@ A Cannabis Indica é famosa por suas propriedades medicinais e efeitos relaxante
     </main>
      
     <footer>
+        <nav>
+                <ul>
+          <li> <button id="tema1button"> Tema 1 </button></li>
+          <li>  <button id="tema2button">Tema 2</button> </li>
+        </ul>
+
+         <script>
+             const changeColorButton2 = document.getElementById('tema2button');
+             // Adiciona evento de listener ao botao
+             changeColorButton2.addEventListener('click', () => {
+                 // Muda a cor de fundo
+                 document.body.style.backgroundColor = '#F0FFFF';
+                 document.header.style.backgroundColor = '#F0FFFF';
+             });
+
+             const changeColorButton1 = document.getElementById('tema1button');
+             // Adiciona evento de listener ao botao
+             changeColorButton1.addEventListener('click', () => {
+                 // Muda a cor de fundo
+                 document.body.style.backgroundColor = '#FFC0CB';
+                 document.header.style.backgroundColor = '#FFC0CB';
+             });
+         </script>
+        </nav>
       Copyright © 2023 pedroka
     </footer>
 </body>
